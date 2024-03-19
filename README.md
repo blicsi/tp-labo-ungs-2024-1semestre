@@ -1,1 +1,1 @@
-# Tabajo Practico Entraga Incial Laboratorio de COntrucción de Software
+# Trabajo Práctico Entrega Inicial Laboratorio de Construcción de Software
