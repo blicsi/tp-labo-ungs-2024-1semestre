@@ -1,4 +1,4 @@
-# Trabajo Práctico Entrega Inicial Laboratorio de Construcción de Software
+# Trabajo Práctico Inicial Laboratorio de Construcción de Software
 
 El objetivo principal del trabajo práctico es la construcción de un Chatbot con IA orientado a un tema a elección.
 
