@@ -1,0 +1,20 @@
+{
+    "intent":[
+        {
+            "tag":"greetings",
+            "patterns":[
+                "Hola",
+                "Hey",
+                "Saludos",
+                "Hay alguien ahi",
+                "Buenos Dias",
+                "¿Cómo está?"
+            ],
+            "responses":[
+                "Hola buenos dias",
+                "Hola",
+                ""
+            ]
+        }
+    ]
+}

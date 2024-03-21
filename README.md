@@ -11,3 +11,4 @@ Para llevar a cabo este proyecto, se emplearán diversas herramientas. Utilizare
 A continuación se muestran unos mockups de una posible vista final del Chatbot construido.
 
 ![Mockup](./img/mockup.png)
+op
