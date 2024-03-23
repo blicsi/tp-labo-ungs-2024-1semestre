@@ -4,6 +4,10 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
+#from nltk.stem import SnowballStemmer
+#stemmer = SnowballStemmer('spanish')
+
+
 def tokenize(sentence):
    
     return nltk.word_tokenize(sentence)
