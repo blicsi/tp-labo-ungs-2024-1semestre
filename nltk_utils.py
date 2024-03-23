@@ -1,17 +1,17 @@
 import numpy as np
 import nltk
 # nltk.download('punkt')
+
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
-#from nltk.stem import SnowballStemmer
-#stemmer = SnowballStemmer('spanish')
+from nltk.stem import SnowballStemmer
+stemmer = SnowballStemmer('spanish')
 
 
 def tokenize(sentence):
    
     return nltk.word_tokenize(sentence)
-
 
 def stem(word):
 
