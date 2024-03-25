@@ -3,82 +3,64 @@
       {
         "tag": "greeting",
         "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
+          "Hola",
+          "Holaa",
+          "Como estas?",
+          "Cómo estás?",
+          "Cómo estas?",
+          "Hay alguien ahí?",
+          "Buenos días",
+          "Buenas noches",
+          "Buenas tardes"
         ],
         "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
+          "Hola :)",
+          "Hola, gracias por visitarme",
+          "Hola, ¿qué puedo hacer por ti?",
+          "Hola, ¿en que puedo ayudarte?"
         ]
       },
       {
         "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
+        "patterns": ["Chau", "Adios", "Hasta luego", "Nos vemos", "Que tengas buen dia"],
         "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
+          "Hasta luego, gracias por visitarme",
+          "Que tenga un lindo día",
+          "¡Adiós! Vuelve pronto."
         ]
       },
       {
         "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
+        "patterns": ["Gracias", "Graciass","Muchas gracias", "Eso es útil"],
+        "responses": ["Encantado de ayudar!","De nada!","A tu servicio :)"]
       },
       {
         "tag": "funny",
         "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
+          "Cuéntame un chiste",
+          "Cuéntame algo gracioso",
+          "¿Sabes un chiste?"
         ],
         "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
+          "Solo soy una IA no puedo contar chistes o hacer cosas como tomar mate :(",
+          "Cuántos estudiantes se necesitan para cambiar una bombita en la UTN \n 4, uno para que diseñe una fuente nuclear, otro que se imagine como alimentar el resto del país con energía nuclear, uno mas para instalarlo y otro para escribir un programa que controle el switch de la bombita."
+        ]
+      },
+      {
+        "tag": "bot_info",
+        "patterns": [
+          "¿Quién eres?",
+          "¿Qué eres?",
+          "¿Cuál es tu función?",
+          "¿Quién te creó?",
+          "¿Para qué sirves?"
+        ],
+        "responses": [
+          "Hola! Soy un UNGS Helper diseñado para ayudarte en tus cursadas, puedo brindarte información sobre materia, horarios, fechas, etc.",
+          "Soy un bot creado para brindarte información y asistencia con respecto a tu cursada.",
+          "Fui creado por Pablo Gross, Patricio Castillo y Franco Fallatti para facilitate información sobre tu cursada."
         ]
       }
+      
     ]
   }
