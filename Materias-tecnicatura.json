@@ -13,9 +13,9 @@
           "responses": [
               "Hola :)",
               "Hola, gracias por usar el programa",
-              "Hola, ¿Qu&#233; puedo hacer por vos?",
-              "Buenas noches, ¿Cu&#225;l es su consulta?",
-              "Buenas tardes, ¿Qu&#233; necesita?"
+              "Hola, Que; puedo hacer por vos?",
+              "Buenas noches, Cual es su consulta?",
+              "Buenas tardes, Que; necesita?"
           ]
       },
       {
@@ -31,7 +31,7 @@
               "Tenga un buen dia",
               ":)",
               "Cuidate",
-              "Hasta la pr&#243;xima"
+              "Hasta la proxima"
           ]
       },
       {
@@ -49,111 +49,111 @@
           ]
       },
       {
-          "tag": "Comisiones Especificaci&#243;n de Software",
+          "tag": "Comisiones Especificacion de Software",
           "patterns": [
-              "¿Cu&#225;les son las comisiones de Especificaci&#243;n de Software?",
-              "Dame la informacion sobre las comisiones de Especificaci&#243;n de Software",
-              "Necesito las comisiones de Especificaci&#243;n de Software",
-              "¿Me dar&#237;as las comisiones de Especificaci&#243;n de Software?",
-              "Qu&#233; comisiones tiene Especificaci&#243;n de Software"
+              "Cuales son las comisiones de Especificacion de Software?",
+              "Dame la informacion sobre las comisiones de Especificacion de Software",
+              "Necesito las comisiones de Especificacion de Software",
+              "Me darias las comisiones de Especificacion de Software?",
+              "Que comisiones tiene Especificacion de Software"
           ],
           "responses": [
-              "Las comisiones de Especificaci&#243;n de Software son: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)",
-              "Especificaci&#243;n de Software tiene las siguientes comisiones: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)"
+              "Las comisiones de Especificacion de Software son: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)",
+              "Especificacion de Software tiene las siguientes comisiones: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)"
           ]
       },
       {
-          "tag": "Comisiones Ingenier&#237;a de Software",
+          "tag": "Comisiones Ingenieria de Software",
           "patterns": [
-              "Necesito las comisiones de Ingenier&#237;a de Software",
-              "¿Cu&#225;les son las comisiones de Ingenier&#237;a de Software",
-              "¿Me dar&#237;as las comisiones de Ingenier&#237;a de Software?",
-              "¿Qu&#233; comisiones tiene Ingenier&#237;a de Software?",
-              "¿Dame informacion sobre las comisiones de Ingenier&#237;a de Software"
+              "Necesito las comisiones de Ingenieria de Software",
+              "Cuales son las comisiones de Ingenieria de Software",
+              "Me darias las comisiones de Ingenieria de Software?",
+              "Que comisiones tiene Ingenieria de Software?",
+              "Dame informacion sobre las comisiones de Ingenieria de Software"
           ],
           "responses": [
-              "Las comisiones de Ingenier&#237;a de Software son: A0442 Com-01 (dia mi&#233;rcoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia mi&#233;rcoles de 8:00 a 12:00 en el labo 7210)",
-              "Ingenier&#237;a de Software tiene las siguientes comisiones: A0442 Com-01 (dia mi&#233;rcoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia mi&#233;rcoles de 8:00 a 12:00 en el labo 7210)"
+              "Las comisiones de Ingenieria de Software son: A0442 Com-01 (dia miercoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia miercoles de 8:00 a 12:00 en el labo 7210)",
+              "Ingenieria de Software tiene las siguientes comisiones: A0442 Com-01 (dia miercoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia miercoles de 8:00 a 12:00 en el labo 7210)"
           ]
       },
       {
-          "tag": "Comision Gesti&#243;n y Administraci&#243;n de Bases de Datos",
+          "tag": "Comision Gestion y Administracion de Bases de Datos",
           "patterns": [
-              "Necesito las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos",
-              "¿Cu&#225;les son las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos",
-              "¿Me dar&#237;as las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos?",
-              "¿Qu&#233; comisiones tiene Gesti&#243;n y Administraci&#243;n de Bases de Datos?",
-              "¿Dame informacion sobre las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos"
+              "Necesito las comisiones de Gestion y Administracion de Bases de Datos",
+              "Cuales son las comisiones de Gestion y Administracion de Bases de Datos",
+              "Me darias las comisiones de Gestion y Administracion de Bases de Datos?",
+              "Que comisiones tiene Gestion y Administracion de Bases de Datos?",
+              "Dame informacion sobre las comisiones de Gestion y Administracion de Bases de Datos"
           ],
           "responses": [
-              "Las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos son: A0439 Com-01 (d&#237;as lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (d&#237;a lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)",
-              "Gesti&#243;n y Administraci&#243;n de Bases de Datos tiene las siguientes comisiones: A0439 Com-01 (d&#237;as lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (d&#237;a lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)"
+              "Las comisiones de Gestion y Administracion de Bases de Datos son: A0439 Com-01 (dias lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (dia lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)",
+              "Gestion y Administracion de Bases de Datos tiene las siguientes comisiones: A0439 Com-01 (dias lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (dia lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)"
           ]
       },
       {
-          "tag": "Comision Programaci&#243;n III",
+          "tag": "Comision Programacion III",
           "patterns": [
-              "Necesito las comisiones de Programaci&#243;n III",
-              "¿Cu&#225;les son las comisiones de Programaci&#243;n III",
-              "¿Me dar&#237;as las comisiones de Programaci&#243;n III?",
-              "¿Qu&#233; comisiones tiene Programaci&#243;n III?",
-              "¿Dame informacion sobre las comisiones de Programaci&#243;n III"
+              "Necesito las comisiones de Programacion III",
+              "Cuales son las comisiones de Programacion III",
+              "Me darias las comisiones de Programacion III?",
+              "Que comisiones tiene Programacion III?",
+              "Dame informacion sobre las comisiones de Programacion III"
           ],
         "responses": [
-          "Las comisiones de Programaci&#243;n III son: A0452 Com-01 (&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (d&#237;a martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)",
-          "Programaci&#243;n III tiene las siguientes comisiones: A0452 Com-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (d&#237;a martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)"
+          "Las comisiones de Programacion III son: A0452 Com-01 (ias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (dia martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)",
+          "Programacion III tiene las siguientes comisiones: A0452 Com-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (dia martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)"
         ]
       },
       {
-        "tag": "Comision Laboratorio de Construcci&#243;n de Software",
+        "tag": "Comision Laboratorio de Construccion de Software",
         "patterns": [
-            "Necesito las comisiones de Laboratorio de Construcci&#243;n de Software",
-            "¿Cu&#225;les son las comisiones de Laboratorio de Construcci&#243;n de Software",
-            "¿Me dar&#237;as las comisiones de Laboratorio de Construcci&#243;n de Software?",
-            "¿Qu&#233; comisiones tiene Laboratorio de Construcci&#243;n de Software?",
-            "¿Dame informacion sobre las comisiones de Laboratorio de Construcci&#243;n de Software"
+            "Necesito las comisiones de Laboratorio de Construccion de Software",
+            "Cuales son las comisiones de Laboratorio de Construccion de Software",
+            "Me darias las comisiones de Laboratorio de Construccion de Software?",
+            "Que comisiones tiene Laboratorio de Construccion de Software?",
+            "Dame informacion sobre las comisiones de Laboratorio de Construccion de Software"
         ],
         "responses": [
-            "Las comisiones de Laboratorio de Construcci&#243;n de Software son: A0445 COM-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (d&#237;a mi&#233;rcoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)",
-            "Laboratorio de Construcci&#243;n de Software tiene las siguientes comisiones: A0445 COM-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (d&#237;a mi&#233;rcoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)"
+            "Las comisiones de Laboratorio de Construccion de Software son: A0445 COM-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (dia miercoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)",
+            "Laboratorio de Construccion de Software tiene las siguientes comisiones: A0445 COM-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (dia miercoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)"
         ]
     },
     {
-        "tag": "Comision Matem&#225;tica Discreta",
+        "tag": "Comision Matematica Discreta",
         "patterns": [
-            "Necesito las comisiones de Matem&#225;tica Discreta",
-            "¿Cu&#225;les son las comisiones de Matem&#225;tica Discreta",
-            "¿Me dar&#237;as las comisiones de Matem&#225;tica Discreta?",
-            "¿Qu&#233; comisiones tiene Matem&#225;tica Discreta?",
-            "¿Dame informacion sobre las comisiones de Matem&#225;tica Discreta"
+            "Necesito las comisiones de Matematica Discreta",
+            "Cuales son las comisiones de Matematica Discreta",
+            "Me darias las comisiones de Matematica Discreta?",
+            "Que comisiones tiene Matematica Discreta?",
+            "Dame informacion sobre las comisiones de Matematica Discreta"
         ],
         "responses": [
-            "Las comisiones de Matem&#225;tica Discreta son: A0234 COM 01 (d&#237;as martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (d&#237;a martes de 10:00 a 12:00 labo 7174/6 y jueves de 8:00 a 12:00 labo 7173)",
-            "Matem&#225;tica Discreta tiene las siguientes comisiones: A0234 COM 01 (d&#237;as martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (d&#237;a martes de 10:00 a 12:00 labo 7174/5y jueves de 8:00 a 12:00 labo 7173)"
+            "Las comisiones de Matematica Discreta son: A0234 COM 01 (dias martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (dia martes de 10:00 a 12:00 labo 7174/6 y jueves de 8:00 a 12:00 labo 7173)",
+            "Matematica Discreta tiene las siguientes comisiones: A0234 COM 01 (dias martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (dia martes de 10:00 a 12:00 labo 7174/5y jueves de 8:00 a 12:00 labo 7173)"
         ]
     },
     {
-      "tag": "Comision L&#243;gica y Teor&#237;a de N&#250;meros",
+      "tag": "Comision Logica y Teoria de Numeros",
       "patterns": [
-        "Necesito las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros",
-        "¿Cuales son las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros",
-        "¿Me darias las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros?",
-        "¿Que comisiones tiene L&#243;gica y Teor&#237;a de N&#250;meros?",
-        "¿Dame informacion sobre las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros"
+        "Necesito las comisiones de Logica y Teoria de Numeros",
+        "Cuales son las comisiones de Logica y Teoria de Numeros",
+        "Me darias las comisiones de Logica y Teoria de Numeros?",
+        "Que comisiones tiene Logica y Teoria de Numeros?",
+        "Dame informacion sobre las comisiones de Logica y Teoria de Numeros"
       ],
       "responses": [
-        "Las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros son: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)",
-        "L&#243;gica y Teor&#237;a de N&#250;meros tiene las siguientes comisiones: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)"
+        "Las comisiones de Logica y Teoria de Numeros son: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)",
+        "Logica y Teoria de Numeros tiene las siguientes comisiones: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)"
       ]
     },
     {
       "tag": "Comision Sistemas Operativos y Redes",
       "patterns": [
         "Necesito las comisiones de Sistemas Operativos y Redes",
-        "¿Cuales son las comisiones de Sistemas Operativos y Redes",
-        "¿Me darias las comisiones de Sistemas Operativos y Redes?",
-        "¿Que comisiones tiene Sistemas Operativos y Redes?",
-        "¿Dame informacion sobre las comisiones de Sistemas Operativos y Redes"
+        "Cuales son las comisiones de Sistemas Operativos y Redes",
+        "Me darias las comisiones de Sistemas Operativos y Redes?",
+        "Que comisiones tiene Sistemas Operativos y Redes?",
+        "Dame informacion sobre las comisiones de Sistemas Operativos y Redes"
       ],
       "responses": [
         "Las comisiones de Sistemas Operativos y Redes son: A0457 COM-01 (dias lunes de 18:00 a 22:00 labo 7226) y A0457 COM-02 (dia lunes de 13:00 a 17:00 labo 7226)",
@@ -161,31 +161,31 @@
       ]
     },
     {
-      "tag": "Comision Ingl&#233;s Lectocomprensi&#243;n III ",
+      "tag": "Comision Ingles Lectocomprension III ",
       "patterns": [
-        "Necesito las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ",
-        "¿Cuales son las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ",
-        "¿Me darias las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ?",
-        "¿Que comisiones tiene Ingl&#233;s Lectocomprensi&#243;n III ?",
-        "¿Dame informacion sobre las comisiones de Ingl&#233;s Lectocomprensi&#243;n III "
+        "Necesito las comisiones de Ingles Lectocomprension III ",
+        "Cuales son las comisiones de Ingles Lectocomprension III ",
+        "Me darias las comisiones de Ingles Lectocomprension III ?",
+        "Que comisiones tiene Ingles Lectocomprension III ?",
+        "Dame informacion sobre las comisiones de Ingles Lectocomprension III "
       ],
       "responses": [
-        "Las comisiones de Ingl&#233;s Lectocomprensi&#243;n III son: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)",
-        "Ingl&#233;s Lectocomprensi&#243;n III tiene las siguientes comisiones: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)"
+        "Las comisiones de Ingles Lectocomprension III son: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)",
+        "Ingles Lectocomprension III tiene las siguientes comisiones: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)"
       ]
     },
     {
-      "tag": "Comision Ingl&#233;s Lectocomprensi&#243;n II ",
+      "tag": "Comision Ingles Lectocomprension II ",
       "patterns": [
-        "Necesito las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ",
-        "¿Cuales son las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ",
-        "¿Me darias las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ?",
-        "¿Que comisiones tiene Ingl&#233;s Lectocomprensi&#243;n II ?",
-        "¿Dame informacion sobre las comisiones de Ingl&#233;s Lectocomprensi&#243;n II "
+        "Necesito las comisiones de Ingles Lectocomprension II ",
+        "Cuales son las comisiones de Ingles Lectocomprension II ",
+        "Me darias las comisiones de Ingles Lectocomprension II ?",
+        "Que comisiones tiene Ingles Lectocomprension II ?",
+        "Dame informacion sobre las comisiones de Ingles Lectocomprension II "
       ],
       "responses": [
-        "Las comisiones de Ingl&#233;s Lectocomprensi&#243;n II son: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)",
-        "Ingl&#233;s Lectocomprensi&#243;n II tiene las siguientes comisiones: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)"
+        "Las comisiones de Ingles Lectocomprension II son: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)",
+        "Ingles Lectocomprension II tiene las siguientes comisiones: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)"
       ]
     },
     {
@@ -193,7 +193,7 @@
       "patterns": [
         "Cuentame un chiste",
         "Cuentame algo gracioso",
-        "¿Sabes un chiste?"
+        "Sabes un chiste?"
       ],
       "responses": [
         "Solo soy una IA no puedo contar chistes o hacer cosas como tomar mate :(",
@@ -203,11 +203,11 @@
     {
       "tag": "bot_info",
       "patterns": [
-        "¿Quien eres?",
-        "¿Que eres?",
-        "¿Cual es tu funcion?",
-        "¿Quien te creo?",
-        "¿Para que sirves?"
+        "Quien eres?",
+        "Que eres?",
+        "Cual es tu funcion?",
+        "Quien te creo?",
+        "Para que sirves?"
       ],
       "responses": [
         "Hola! Soy un UNGS Helper disenado para ayudarte en tus cursadas, puedo brindarte informacion sobre materia, horarios, fechas, etc.",
