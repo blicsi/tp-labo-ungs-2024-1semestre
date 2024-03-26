@@ -175,6 +175,20 @@
       ]
     },
     {
+      "tag": "Comision Ingl&#233;s Lectocomprensi&#243;n II ",
+      "patterns": [
+        "Necesito las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ",
+        "¿Cuales son las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ",
+        "¿Me darias las comisiones de Ingl&#233;s Lectocomprensi&#243;n II ?",
+        "¿Que comisiones tiene Ingl&#233;s Lectocomprensi&#243;n II ?",
+        "¿Dame informacion sobre las comisiones de Ingl&#233;s Lectocomprensi&#243;n II "
+      ],
+      "responses": [
+        "Las comisiones de Ingl&#233;s Lectocomprensi&#243;n II son: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)",
+        "Ingl&#233;s Lectocomprensi&#243;n II tiene las siguientes comisiones: A0194 COM-01 (dias lunes de 18:00 a 21:00 aula 7030), A0194 COM-02 (dias martes de 9:00 a 12:00 aula 7016), A0194 COM-03 (dias miercoles de 18:00 a 21:00 aula 7021), A0194 COM-04 (dias miercoles de 9:00 a 12:00 aula 7026), A0194 COM-06 (dias viernes de 14:00 a 17:00 aula 7030), A0194 COM-07 (dias viernes de 18:00 a 21:00 aula 7026) y A0194 COM-05 (Virtual), A0194 COM-08 (Virtual), A0194 COM-09 (Virtual)"
+      ]
+    },
+    {
       "tag": "funny",
       "patterns": [
         "Cuentame un chiste",
