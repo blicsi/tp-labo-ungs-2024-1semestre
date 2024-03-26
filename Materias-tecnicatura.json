@@ -1,188 +1,205 @@
 {
-    "intents": [
+  "intents": [
       {
-        "tag": "greeting",
-        "patterns": [
-          "Hola",
-          "Hola, necesito saber algo",
-          "Tengo una consulta",
-          "Buen dia",
-          "Buenas tardes",
-          "Buenas noches"
-        ],
-        "responses": [
-          "Hola :)",
-          "Hola, gracias por usar el programa",
-          "Hola, ¿Que puedo hacer por vos?",
-          "Buenas noches, ¿Cual es su consulta?",
-          "Buenas tardes, ¿Que necesita?"
-        ]
+          "tag": "greeting",
+          "patterns": [
+              "Hola",
+              "Hola, necesito saber algo",
+              "Tengo una consulta",
+              "Buen dia",
+              "Buenas tardes",
+              "Buenas noches"
+          ],
+          "responses": [
+              "Hola :)",
+              "Hola, gracias por usar el programa",
+              "Hola, ¿Qu&#233; puedo hacer por vos?",
+              "Buenas noches, ¿Cu&#225;l es su consulta?",
+              "Buenas tardes, ¿Qu&#233; necesita?"
+          ]
       },
       {
-        "tag": "goodbye",
-        "patterns": [
-          "Chau", 
-          "Nos vemos",
-          "Hasta pronto",
-          "Hasta luego"
+          "tag": "goodbye",
+          "patterns": [
+              "Chau",
+              "Nos vemos",
+              "Hasta pronto",
+              "Hasta luego"
+          ],
+          "responses": [
+              "Adios, espero haberte ayudado",
+              "Tenga un buen dia",
+              ":)",
+              "Cuidate",
+              "Hasta la pr&#243;xima"
+          ]
+      },
+      {
+          "tag": "thanks",
+          "patterns": [
+              "Gracias",
+              "Muchas gracias",
+              "Me ayudaste mucho, gracias",
+              "Gracias por la informacion"
+          ],
+          "responses": [
+              "De nada",
+              "Estoy aqui para ayudar",
+              "Un placer"
+          ]
+      },
+      {
+          "tag": "Comisiones Especificaci&#243;n de Software",
+          "patterns": [
+              "¿Cu&#225;les son las comisiones de Especificaci&#243;n de Software?",
+              "Dame la informacion sobre las comisiones de Especificaci&#243;n de Software",
+              "Necesito las comisiones de Especificaci&#243;n de Software",
+              "¿Me dar&#237;as las comisiones de Especificaci&#243;n de Software?",
+              "Qu&#233; comisiones tiene Especificaci&#243;n de Software"
+          ],
+          "responses": [
+              "Las comisiones de Especificaci&#243;n de Software son: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)",
+              "Especificaci&#243;n de Software tiene las siguientes comisiones: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)"
+          ]
+      },
+      {
+          "tag": "Comisiones Ingenier&#237;a de Software",
+          "patterns": [
+              "Necesito las comisiones de Ingenier&#237;a de Software",
+              "¿Cu&#225;les son las comisiones de Ingenier&#237;a de Software",
+              "¿Me dar&#237;as las comisiones de Ingenier&#237;a de Software?",
+              "¿Qu&#233; comisiones tiene Ingenier&#237;a de Software?",
+              "¿Dame informacion sobre las comisiones de Ingenier&#237;a de Software"
+          ],
+          "responses": [
+              "Las comisiones de Ingenier&#237;a de Software son: A0442 Com-01 (dia mi&#233;rcoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia mi&#233;rcoles de 8:00 a 12:00 en el labo 7210)",
+              "Ingenier&#237;a de Software tiene las siguientes comisiones: A0442 Com-01 (dia mi&#233;rcoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia mi&#233;rcoles de 8:00 a 12:00 en el labo 7210)"
+          ]
+      },
+      {
+          "tag": "Comision Gesti&#243;n y Administraci&#243;n de Bases de Datos",
+          "patterns": [
+              "Necesito las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos",
+              "¿Cu&#225;les son las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos",
+              "¿Me dar&#237;as las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos?",
+              "¿Qu&#233; comisiones tiene Gesti&#243;n y Administraci&#243;n de Bases de Datos?",
+              "¿Dame informacion sobre las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos"
+          ],
+          "responses": [
+              "Las comisiones de Gesti&#243;n y Administraci&#243;n de Bases de Datos son: A0439 Com-01 (d&#237;as lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (d&#237;a lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)",
+              "Gesti&#243;n y Administraci&#243;n de Bases de Datos tiene las siguientes comisiones: A0439 Com-01 (d&#237;as lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (d&#237;a lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)"
+          ]
+      },
+      {
+          "tag": "Comision Programaci&#243;n III",
+          "patterns": [
+              "Necesito las comisiones de Programaci&#243;n III",
+              "¿Cu&#225;les son las comisiones de Programaci&#243;n III",
+              "¿Me dar&#237;as las comisiones de Programaci&#243;n III?",
+              "¿Qu&#233; comisiones tiene Programaci&#243;n III?",
+              "¿Dame informacion sobre las comisiones de Programaci&#243;n III"
           ],
         "responses": [
-          "Adios, espero haberte ayudado",
-          "Tenga un buen dia",
-          ":)",
-          "Cuidate",
-          "Hasta la proxima"
+          "Las comisiones de Programaci&#243;n III son: A0452 Com-01 (&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (d&#237;a martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)",
+          "Programaci&#243;n III tiene las siguientes comisiones: A0452 Com-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (d&#237;a martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)"
         ]
       },
       {
-        "tag": "thanks",
-        "patterns": ["Gracias",
-          "Muchas gracias",
-          "Me ayudaste mucho, gracias",
-          "Gracias por la informacion"
-          ],
-        "responses": ["De nada",
-         "Estoy aqui para ayudar",
-         "Un placer"
-        ]
-      },
-      {
-        "tag": "Comisiones Especificación de Software",
+        "tag": "Comision Laboratorio de Construcci&#243;n de Software",
         "patterns": [
-          "¿Cuales son las comisiones de Especificación de Software?",
-          "Dame la informacion sobre las comisiones de Especificación de Software",
-          "Necesito las comisiones de Especificación de Software",
-          "¿Me darias las comisiones de Especificación de Software?",
-          "Que comisiones tiene Especificación de Software"
+            "Necesito las comisiones de Laboratorio de Construcci&#243;n de Software",
+            "¿Cu&#225;les son las comisiones de Laboratorio de Construcci&#243;n de Software",
+            "¿Me dar&#237;as las comisiones de Laboratorio de Construcci&#243;n de Software?",
+            "¿Qu&#233; comisiones tiene Laboratorio de Construcci&#243;n de Software?",
+            "¿Dame informacion sobre las comisiones de Laboratorio de Construcci&#243;n de Software"
         ],
         "responses": [
-          "Las comisiones de Especificación de Software son: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)",
-          "Especificación de Software tiene las siguientes comisiones: A0436 Com-01 (dia martes de 18:00 a 22:00 en el labo 7114) y A0436 Com-02 (dia viernes de 13:00 a 17:00 en el labo 7114)"
+            "Las comisiones de Laboratorio de Construcci&#243;n de Software son: A0445 COM-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (d&#237;a mi&#233;rcoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)",
+            "Laboratorio de Construcci&#243;n de Software tiene las siguientes comisiones: A0445 COM-01 (d&#237;as martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (d&#237;a mi&#233;rcoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)"
         ]
-      },
-      {
-        "tag": "Comisiones Ingeniería de Software",
+    },
+    {
+        "tag": "Comision Matem&#225;tica Discreta",
         "patterns": [
-          "Necesito las comisiones de Ingeniería de Software",
-          "¿Cuales son las comisiones de Ingeniería de Software",
-          "¿Me darias las comisiones de Ingeniería de Software?",
-          "¿Que comisiones tiene Ingeniería de Software?",
-          "¿Dame informacion sobre las comisiones de Ingeniería de Software"
+            "Necesito las comisiones de Matem&#225;tica Discreta",
+            "¿Cu&#225;les son las comisiones de Matem&#225;tica Discreta",
+            "¿Me dar&#237;as las comisiones de Matem&#225;tica Discreta?",
+            "¿Qu&#233; comisiones tiene Matem&#225;tica Discreta?",
+            "¿Dame informacion sobre las comisiones de Matem&#225;tica Discreta"
         ],
         "responses": [
-          "Las comisiones de Ingeniería de Software son: A0442 Com-01 (dia miercoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia miercoles de 8:00 a 12:00 en el labo 7210)",
-          "Ingeniería de Software tiene las siguientes comisiones: A0442 Com-01 (dia miercoles de 18:00 a 22:00 en el labo 7230) y A0442 Com-02 (dia miercoles de 8:00 a 12:00 en el labo 7210)"
+            "Las comisiones de Matem&#225;tica Discreta son: A0234 COM 01 (d&#237;as martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (d&#237;a martes de 10:00 a 12:00 labo 7174/6 y jueves de 8:00 a 12:00 labo 7173)",
+            "Matem&#225;tica Discreta tiene las siguientes comisiones: A0234 COM 01 (d&#237;as martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (d&#237;a lunes de 20:00 a 22:00 y mi&#233;rcoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (d&#237;a martes de 10:00 a 12:00 labo 7174/5y jueves de 8:00 a 12:00 labo 7173)"
         ]
-      },
-      {
-        "tag": "Comision Gestión y Administración de Bases de Datos",
-        "patterns": [
-          "Necesito las comisiones de Gestión y Administración de Bases de Datos",
-          "¿Cuales son las comisiones de Gestión y Administración de Bases de Datos",
-          "¿Me darias las comisiones de Gestión y Administración de Bases de Datos?",
-          "¿Que comisiones tiene Gestión y Administración de Bases de Datos?",
-          "¿Dame informacion sobre las comisiones de Gestión y Administración de Bases de Datos"
-        ],
-        "responses": [
-          "Las comisiones de Gestión y Administración de Bases de Datos son: A0439 Com-01 (dias lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (dia lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)",
-          "Gestión y Administración de Bases de Datos tiene las siguientes comisiones: A0439 Com-01 (dias lunes de 18:00 a 22:00 y jueves de 18:00 a 22:00 labo 7128) y A0439 Com-02 (dia lunes de 13:00 a 17:00 y jueves de 13:00 a 17:00 labo 7128)"
-        ]
-      },
-      {
-        "tag": "Comision Programación III",
-        "patterns": [
-          "Necesito las comisiones de Programación III",
-          "¿Cuales son las comisiones de Programación III",
-          "¿Me darias las comisiones de Programación III?",
-          "¿Que comisiones tiene Programación III?",
-          "¿Dame informacion sobre las comisiones de Programación III"
-        ],
-        "responses": [
-          "Las comisiones de Programación III son: A0452 Com-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (dia martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)",
-          "Programación III tiene las siguientes comisiones: A0452 Com-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7226) y A0452 Com-02 (dia martes de 8:00 a 12:00 y jueves de 10:00 a 12:00 labo 7230)"
-        ]
-      },
-      {
-        "tag": "Comision Laboratorio de Construcción de Software",
-        "patterns": [
-          "Necesito las comisiones de Laboratorio de Construcción de Software",
-          "¿Cuales son las comisiones de Laboratorio de Construcción de Software",
-          "¿Me darias las comisiones de Laboratorio de Construcción de Software?",
-          "¿Que comisiones tiene Laboratorio de Construcción de Software?",
-          "¿Dame informacion sobre las comisiones de Laboratorio de Construcción de Software"
-        ],
-        "responses": [
-          "Las comisiones de Laboratorio de Construcción de Software son: A0445 COM-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (dia miercoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)",
-          "Laboratorio de Construcción de Software tiene las siguientes comisiones: A0445 COM-01 (dias martes de 18:00 a 22:00 y jueves de 18:00 a 20:00 labo 7116) y A0445 COM 02 (dia miercoles de 18:00 a 22:00 y viernes de 18:00 a 20:00 labo 7116)"
-        ]
-      },
-      {
-        "tag": "Comision Matemática Discreta",
-        "patterns": [
-          "Necesito las comisiones de Matemática Discreta",
-          "¿Cuales son las comisiones de Matemática Discreta",
-          "¿Me darias las comisiones de Matemática Discreta?",
-          "¿Que comisiones tiene Matemática Discreta?",
-          "¿Dame informacion sobre las comisiones de Matemática Discreta"
-        ],
-        "responses": [
-          "Las comisiones de Matemática Discreta son: A0234 COM 01 (dias martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (dia martes de 10:00 a 12:00 labo 7174/6 y jueves de 8:00 a 12:00 labo 7173)",
-          "Matemática Discreta tiene las siguientes comisiones: A0234 COM 01 (dias martes de 10:00 a 12:00 labo 7179 y jueves de 8:00 a 12:00 labo 7075/7), A0234 COM-02 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3025), A0234 COM-03 (dia lunes de 20:00 a 22:00 y miercoles de 18:00 a 22:00 labo 3026),  A0234 COM-04 (dia martes de 10:00 a 12:00 labo 7174/5y jueves de 8:00 a 12:00 labo 7173)"
-        ]
-      },
-      {
-        "tag": "Comision Lógica y Teoría de Números",
-        "patterns": [
-          "Necesito las comisiones de Lógica y Teoría de Números",
-          "¿Cuales son las comisiones de Lógica y Teoría de Números",
-          "¿Me darias las comisiones de Lógica y Teoría de Números?",
-          "¿Que comisiones tiene Lógica y Teoría de Números?",
-          "¿Dame informacion sobre las comisiones de Lógica y Teoría de Números"
-        ],
-        "responses": [
-          "Las comisiones de Lógica y Teoría de Números son: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)",
-          "Lógica y Teoría de Números tiene las siguientes comisiones: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)"
-        ]
-      },
-      {
-        "tag": "Comision Sistemas Operativos y Redes",
-        "patterns": [
-          "Necesito las comisiones de Sistemas Operativos y Redes",
-          "¿Cuales son las comisiones de Sistemas Operativos y Redes",
-          "¿Me darias las comisiones de Sistemas Operativos y Redes?",
-          "¿Que comisiones tiene Sistemas Operativos y Redes?",
-          "¿Dame informacion sobre las comisiones de Sistemas Operativos y Redes"
-        ],
-        "responses": [
-          "Las comisiones de Sistemas Operativos y Redes son: A0457 COM-01 (dias lunes de 18:00 a 22:00 labo 7226) y A0457 COM-02 (dia lunes de 13:00 a 17:00 labo 7226)",
-          "Sistemas Operativos y Redes tiene las siguientes comisiones: A0457 COM-01 (dias lunes de 18:00 a 22:00 labo 7226) y A0457 COM-02 (dia lunes de 13:00 a 17:00 labo 7226)"
-        ]
-      },
-      {
-        "tag": "Comision Inglés Lectocomprensión III ",
-        "patterns": [
-          "Necesito las comisiones de Inglés Lectocomprensión III ",
-          "¿Cuales son las comisiones de Inglés Lectocomprensión III ",
-          "¿Me darias las comisiones de Inglés Lectocomprensión III ?",
-          "¿Que comisiones tiene Inglés Lectocomprensión III ?",
-          "¿Dame informacion sobre las comisiones de Inglés Lectocomprensión III "
-        ],
-        "responses": [
-          "Las comisiones de Inglés Lectocomprensión III son: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)",
-          "Inglés Lectocomprensión III tiene las siguientes comisiones: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+    },
+    {
+      "tag": "Comision L&#243;gica y Teor&#237;a de N&#250;meros",
+      "patterns": [
+        "Necesito las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros",
+        "¿Cuales son las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros",
+        "¿Me darias las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros?",
+        "¿Que comisiones tiene L&#243;gica y Teor&#237;a de N&#250;meros?",
+        "¿Dame informacion sobre las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros"
+      ],
+      "responses": [
+        "Las comisiones de L&#243;gica y Teor&#237;a de N&#250;meros son: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)",
+        "L&#243;gica y Teor&#237;a de N&#250;meros tiene las siguientes comisiones: A0446 COM 01 (dias jueves de 8:00 a 12:00 aula 7183/5), A0446 COM 02 (lunes de 18:00 a 20:00 aula 7183/5), A0446 COM 03 (viernes de 13:00 a 17:00 aula 7282/4), A0446 COM 04 (dias jueves de 8:00 a 12:00 aula 7282/4), A0446 COM 05 (lunes de 18:00 a 20:00 aula 7282/4), A0446 COM 06 (viernes de 13:00 a 17:00 aula 7183/5), A0446 COM 07 (viernes de 18:00 a 22:00 aula 7183/5)"
+      ]
+    },
+    {
+      "tag": "Comision Sistemas Operativos y Redes",
+      "patterns": [
+        "Necesito las comisiones de Sistemas Operativos y Redes",
+        "¿Cuales son las comisiones de Sistemas Operativos y Redes",
+        "¿Me darias las comisiones de Sistemas Operativos y Redes?",
+        "¿Que comisiones tiene Sistemas Operativos y Redes?",
+        "¿Dame informacion sobre las comisiones de Sistemas Operativos y Redes"
+      ],
+      "responses": [
+        "Las comisiones de Sistemas Operativos y Redes son: A0457 COM-01 (dias lunes de 18:00 a 22:00 labo 7226) y A0457 COM-02 (dia lunes de 13:00 a 17:00 labo 7226)",
+        "Sistemas Operativos y Redes tiene las siguientes comisiones: A0457 COM-01 (dias lunes de 18:00 a 22:00 labo 7226) y A0457 COM-02 (dia lunes de 13:00 a 17:00 labo 7226)"
+      ]
+    },
+    {
+      "tag": "Comision Ingl&#233;s Lectocomprensi&#243;n III ",
+      "patterns": [
+        "Necesito las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ",
+        "¿Cuales son las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ",
+        "¿Me darias las comisiones de Ingl&#233;s Lectocomprensi&#243;n III ?",
+        "¿Que comisiones tiene Ingl&#233;s Lectocomprensi&#243;n III ?",
+        "¿Dame informacion sobre las comisiones de Ingl&#233;s Lectocomprensi&#243;n III "
+      ],
+      "responses": [
+        "Las comisiones de Ingl&#233;s Lectocomprensi&#243;n III son: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)",
+        "Ingl&#233;s Lectocomprensi&#243;n III tiene las siguientes comisiones: A0195 COM-01 (dias miercoles de 18:00 a 20:00 aula 7270) y A0195 COM-02 (Virtual), A0195 COM-03 (Virtual), A0195 COM-04 (Virtual)"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Cuentame un chiste",
+        "Cuentame algo gracioso",
+        "¿Sabes un chiste?"
+      ],
+      "responses": [
+        "Solo soy una IA no puedo contar chistes o hacer cosas como tomar mate :(",
+        "Cuantos estudiantes se necesitan para cambiar una bombita en la UTN \n 4, uno para que disene una fuente nuclear, otro que se imagine como alimentar el resto del pais con energia nuclear, uno mas para instalarlo y otro para escribir un programa que controle el switch de la bombita."
+      ]
+    },
+    {
+      "tag": "bot_info",
+      "patterns": [
+        "¿Quien eres?",
+        "¿Que eres?",
+        "¿Cual es tu funcion?",
+        "¿Quien te creo?",
+        "¿Para que sirves?"
+      ],
+      "responses": [
+        "Hola! Soy un UNGS Helper disenado para ayudarte en tus cursadas, puedo brindarte informacion sobre materia, horarios, fechas, etc.",
+        "Soy un bot creado para brindarte informacion y asistencia con respecto a tu cursada.",
+        "Fui creado por Pablo Gross, Patricio Castillo y Franco Fallatti para facilitate informacion sobre tu cursada."
+      ]
+    }
+  ]
+}
