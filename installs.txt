@@ -1,0 +1,5 @@
+pytorch
+nltk
+pandas
+openpyxl
+dataset
