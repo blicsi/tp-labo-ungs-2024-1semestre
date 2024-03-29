@@ -1,6 +1,5 @@
 import cv2
 #import numpy as np
-
 imagen= cv2.imread('messi.png')
 if imagen is None:
     print('Error: No se pudo cargar la imagen.')
