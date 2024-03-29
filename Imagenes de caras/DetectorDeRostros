@@ -8,8 +8,8 @@ imagen= cv2.imread('imagenes de caras/campeones del mundo.png')
 #Con scaleFactor=1.16 y los otros de base la escala va bien para la cara
 faces= faceClassif.detectMultiScale(imagen,
     scaleFactor=1.1,
-    minNeighbors=5,
-    minSize=(30,30),
+    minNeighbors=9,
+    minSize=(20,20),
     maxSize=(200,200))
 
 for (x,y,w,h) in faces:
