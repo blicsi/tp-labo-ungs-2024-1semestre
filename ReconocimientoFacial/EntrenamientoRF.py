@@ -4,6 +4,7 @@ import numpy as np
 
 dataPath = 'ReconocimientoFacial/Data' 
 listaPersonas= os.listdir(dataPath)
+modelo_path = 'ReconocimientoFacial/modeloEigenFace.xml'
 
 print('Lista de personas: ', listaPersonas)
 
@@ -28,6 +29,9 @@ print('Entrenando')
 
 face_recognizer.train(facesData, np.array(labels))
 
-face_recognizer.write('modeloEigenFace.xml')
-
-print('Modelo almacenado')
+print('Ruta del modelo:', modelo_path)
+try:
+    face_recognizer.write(modelo_path)
+    print('Modelo almacenado exitosamente')
+except Exception as e:
+    print('Error al guardar el modelo:', e)
