@@ -1,5 +1,12 @@
 # Trabajo Práctico Inicial Laboratorio de Construcción de Software
 
+## Índice
+
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+3. [Mockups](#mockups)
+4. [Comandos para Levantar el Proyecto](#comandos-para-levantar-el-proyecto)
+
+## Descripción del Proyecto
 El objetivo principal del trabajo práctico es la construcción de un Chatbot con IA orientado a un tema a elección.
 
 ### Chatbot
@@ -8,7 +15,23 @@ Nuestro Chatbot está enfocado en el ámbito universitario para facilitarle la v
 
 Para llevar a cabo este proyecto, se emplearán diversas herramientas. Utilizaremos el lenguaje de programación Python junto a diversas librerías. Como `aspose.pdf`, que permite la manipulación de archivos PDF de forma eficiente. Ayudándonos a la hora de realizar la conversión de archivos PDF a formato CSV y así poder alimentar a la IA con el uso de los PDF disponibles en la universidad, como el calendario académico, oferta de comisiones, entre otros. La librería pandas, para el análisis y manipulación de los archivos CSV, limpiar y transformar estos datos. Otra librería importante es `pythorch` o `tenserflow` (junto con `keras`), para el aprendizaje automático que nos servirán a la hora de entrenar a esta IA y además nos permitirá utilizando modelados de lenguaje para que pueda mantener una conversación con los estudiantes.
 
+## Mockups
 A continuación se muestran unos mockups de una posible vista final del Chatbot construido.
 
 ![Mockup](./img/mockup.png)
-op
+
+## Comandos para levantar el proyecto
+
+Se requiere de installar las siguientes librerias para poder lebantar el proyecto.
+
+Chatbot:
+
+  ```bash
+   pip install pytorch nltk pandas openpyxl dataset
+   ```
+
+Reconocimiento facial:
+
+  ```bash
+   pip install opencv-python opencv-contrib-python imutils
+   ```
