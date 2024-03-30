@@ -1,0 +1,5 @@
+*.mp4
+ReconocimientoFacial/Data/*
+ReconocimientoFacial/Data/*.mp4
+./ReconocimientoFacial/Data/*
+./ReconocimientoFacial/Data/*.mp4
