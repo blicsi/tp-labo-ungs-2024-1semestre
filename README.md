@@ -35,3 +35,5 @@ Reconocimiento facial:
   ```bash
    pip install opencv-python opencv-contrib-python imutils
    ```
+
+  Además de esto, se deben agregar los archivos de la carpeta [Data](https://drive.google.com/drive/folders/1SIC9dvWZ3jCnUubL4nZVDn60-9IRnJwZ) a Reconocimiento/Facial.
