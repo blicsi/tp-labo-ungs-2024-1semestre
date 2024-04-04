@@ -8,10 +8,10 @@ from nltk_utils import bag_of_words,tokenize
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-with open ("Materias-tecnicatura.json","r") as f:
+with open ("chatbot_viejo/Materias-tecnicatura.json","r") as f:
     intents=json.load(f)
 
-FILE="data.pth"
+FILE="chatbot_viejo/data.pth"
 data = torch.load(FILE)
 
 input_size=data["input_size"]
