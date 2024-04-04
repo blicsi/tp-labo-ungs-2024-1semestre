@@ -10,9 +10,9 @@ from nltk_utils import bag_of_words,tokenize
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-intents = pd.read_csv("better_chatbot/COMISIONES.csv",encoding='latin1',sep=";")
+intents = pd.read_csv("better_chatbot/preguntas_respuestas.csv",encoding='utf-8',sep=",")
 
-FILE="dataMejor.pth"
+FILE="better_chatbot/dataMejor.pth"
 data = torch.load(FILE)
 
 input_size=data["input_size"]
@@ -27,11 +27,14 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name="Sam"
-print("let's chat! type 'quit'to exit")
+columna_preguntas = intents.iloc[:, 0].tolist()
+columna_respuestas = intents.iloc[:, 1].tolist()
+print("vamos a charlar! tipea 'salir' para salir")
+print("especificar lo mas que se pueda:materia, codigo de materia, dia de cursada y comision")
 while True:
     
     sentence = input("you:")
-    if sentence =="quit":
+    if sentence =="salir":
         break
 
     sentence = tokenize(sentence)
@@ -46,10 +49,11 @@ while True:
     probs = torch.softmax(output,dim=1)
     prob=probs[0][predicted.item()]
 
-    if prob.item()>0.25:
-        for intent in intents["intents"]:
-            if tag == intent["tag"]:
+    if prob.item()>0.9999:
+        for intent in columna_preguntas:
+            if tag == columna_preguntas.index(intent):
                 #print(f"{bot_name}: {random.choice(intent['responses'])}")
-                print(intents.iloc(int(tag)))
+                respuesta=f"{str(bot_name)}:{str(columna_respuestas[tag])}"
+        print (respuesta)
     else:
-        print(f"{bot_name}: i do not understand...") 
+        print(f"{bot_name}: por favor especificar mas datos") 
