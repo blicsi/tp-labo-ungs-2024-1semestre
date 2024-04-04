@@ -2,7 +2,7 @@ import cv2
 import os
 import imutils
 
-personName = 'Patricio'
+personName = 'Franco'
 dataPath = 'ReconocimientoFacial/Data' 
 personPath = dataPath + '/' + personName
 
@@ -10,7 +10,8 @@ if not os.path.exists(personPath):
 	print('Carpeta creada: ',personPath)
 	os.makedirs(personPath)
 
-cap =cv2.VideoCapture('ReconocimientoFacial/Patricio.mp4')
+#cap =cv2.VideoCapture('ReconocimientoFacial/Patricio.mp4')
+cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 faceClassif= cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 count=0
@@ -39,7 +40,7 @@ while True:
     if k == 27 or count >=300:
           break
     
-print('hola')
+print('Imagenes capturadas')
     
 cap.release()
 cv2.destroyAllWindows()
