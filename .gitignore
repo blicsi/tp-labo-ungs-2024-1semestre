@@ -1,7 +1,4 @@
 *.mp4
-ReconocimientoFacial/Data/*
-ReconocimientoFacial/Data/*.mp4
-./ReconocimientoFacial/Data/*
-./ReconocimientoFacial/Data/*.mp4
 *.xml
 !haarcascade_frontalface_default.xml
+ReconocimientoFacial/Data/*

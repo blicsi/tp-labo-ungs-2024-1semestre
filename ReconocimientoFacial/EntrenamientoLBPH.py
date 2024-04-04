@@ -5,7 +5,7 @@ import numpy as np
 
 dataPath = 'ReconocimientoFacial/Data' 
 listaPersonas= os.listdir(dataPath)
-modelo_path = 'ReconocimientoFacial/modeloBPH.xml'
+modelo_path = 'ReconocimientoFacial/modeloLBPH.xml'
 
 print('Lista de personas: ', listaPersonas)
 

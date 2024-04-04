@@ -36,4 +36,10 @@ Reconocimiento facial:
    pip install opencv-python opencv-contrib-python imutils
    ```
 
-  Además de esto, se deben agregar los archivos de la carpeta [Data](https://drive.google.com/drive/folders/1SIC9dvWZ3jCnUubL4nZVDn60-9IRnJwZ) a Reconocimiento/Facial.
+  Además de esto, se deben agregar los archivos de la carpeta [Data](https://drive.google.com/drive/folders/1SIC9dvWZ3jCnUubL4nZVDn60-9IRnJwZ) a Reconocimiento/Facial. Y correr en orden los siguientes arcivos: 
+  
+  1. [CapturandoRostros.py](./ReconocimientoFacial/CapturandoRostros.py) que se utilizará para capturar las imágenes de la persona, ya sea por webcam o video, revisar variable `personName` antes de correr y tener en cuenta la variable `count`, ya que esta definirá la cantidad de imágenes a tomar para entrenar el modelo. La idea no es tomar ni muchas ni muy pocas, ya que puede generar imperfecciones al entrenar o puede tardar mucho el entrenamiento. Después de varias pruebas encontramos que 2000-2500 es un valor óptimo. Se recomienda ir cambiando `count` e ir capturando por partes con distintos fondos y luces (0-1000, 1001-2000, 2001-500).
+
+  2. [EntrenamientoLBPH.py](./ReconocimientoFacial/EntrenamientoLBPH.py) este archivo se encarga del entrenamiento del modelo, generando `modeloLBPH.xml`que es un .xml con el modelo entrenado. Elegimos este y no `FF` o `RF`, ya que `LBPH` es mucho más rápido y trabaja mejor con un volumen de imágenes más grandes.  
+
+  3. [ResconocimientoFacial.py](./ReconocimientoFacial/ResconocimientoFacial.py) finalmente al correr este archivo se prenderá la webcam de la computadora y podremos probar la IA en caso de no contar con webcam, se puede usar un video (ver variable `cap`).
