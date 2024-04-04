@@ -27,7 +27,7 @@ for nameDir in listaPersonas:
 #face_recognizer = cv2.face.FisherFaceRecognizer_create()
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
-print('Entrenando')
+print('Entrenando...')
 
 face_recognizer.train(facesData, np.array(labels))
 

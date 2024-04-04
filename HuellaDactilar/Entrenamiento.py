@@ -1,38 +1,42 @@
-## Se usa LBPH para entrenar el modelo
-# Se reutiliza el codigo para el entrenamiento de reconocimiento facial
 import cv2
-import os
 import numpy as np
+import os
 
 dataPath = 'HuellaDactilar/Data' 
 huellas= os.listdir(dataPath)
-modelo_path = 'HuellaDactilar/modeloBPH.xml'
+modelo_path = 'HuellaDactilar/modeloFinger.xml'
 
-print('Lista de huellas: ', huellas)
+sift = cv2.SIFT_create()
+svm = cv2.ml.SVM_create()
 
-labels =[]
-fingerprintsData=[]
-label=0
+descriptores = []
+etiquetas = []
 
-for nameDir in huellas:
-    personPath= dataPath+ '/' +nameDir
-    print('Leyendo las imágenes')
+# Leer y procesar las imágenes de HuellaDactilar/Data
+for huella in huellas:
+    fingerStored = cv2.imread(os.path.join(dataPath, huella), cv2.IMREAD_GRAYSCALE)
+    
+    # Añadir descriptores y etiquetas
+    keypoints, descriptor = sift.detectAndCompute(fingerStored, None)
+    if descriptor is not None:
+        descriptores.append(descriptor)
+        etiquetas.append(1)  # Etiqueta 1 para huellas del usuario correcto
 
-    for fileName in os.listdir(personPath):
-        print('Huellas', nameDir+ '/' + fileName)
-        labels.append(label)
-        fingerprintsData.append(cv2.imread(personPath+'/'+fileName,0))
-    label = label+1
+# Convierte en arrays numpy
+descriptores_np = np.vstack(descriptores)
+etiquetas_np = np.array(etiquetas)
 
-fingerprint_recognizer = cv2.face.LBPHFaceRecognizer_create()
+# Entrenar el clasificador
+svm.setType(cv2.ml.SVM_C_SVC)
+svm.setKernel(cv2.ml.SVM_LINEAR)
+svm.setTermCriteria((cv2.TERM_CRITERIA_MAX_ITER, 100, 1e-6))
 
-print('Entrenando')
-
-fingerprint_recognizer.train(fingerprintsData, np.array(labels))
+print('Entrenando...')
+svm.train(descriptores_np, cv2.ml.ROW_SAMPLE, etiquetas_np)
 
 print('Ruta del modelo:', modelo_path)
 try:
-    fingerprint_recognizer.write(modelo_path)
+    svm.write(modelo_path)
     print('Modelo almacenado exitosamente')
 except Exception as e:
     print('Error al guardar el modelo:', e)
