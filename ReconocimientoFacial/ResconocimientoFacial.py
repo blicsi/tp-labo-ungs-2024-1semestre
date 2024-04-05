@@ -9,7 +9,7 @@ print('imagePaths=',imagePaths)
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 # Leyendo el modelo
-face_recognizer.read('ReconocimientoFacial/modeloBPH.xml')
+face_recognizer.read('ReconocimientoFacial/modeloLBPH.xml')
 
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 #cap = cv2.VideoCapture('ReconocimientoFacial/Franco.mp4')

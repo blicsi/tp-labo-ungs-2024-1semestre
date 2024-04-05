@@ -14,7 +14,7 @@ if not os.path.exists(personPath):
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 faceClassif= cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
-count=0
+count=1900
 
 while True:
     
@@ -37,7 +37,7 @@ while True:
     cv2.imshow('frame', frame)
 
     k = cv2.waitKey(1)
-    if k == 27 or count >=300:
+    if k == 27 or count >=2000:
           break
     
 print('Imagenes capturadas')
