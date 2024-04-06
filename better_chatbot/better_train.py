@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset,DataLoader
 
-from model import NeuralNet
+from better_chatbot.model import NeuralNet
 
 #se guarda en memoria el csv
 data = pd.read_csv("better_chatbot/preguntas_respuestas.csv",encoding='utf-8',sep=",")

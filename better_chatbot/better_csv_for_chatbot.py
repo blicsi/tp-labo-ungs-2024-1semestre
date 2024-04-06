@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
-from model import NeuralNet
+from better_chatbot.model import NeuralNet
 
 class ChatDataset(Dataset):
     def __init__(self, csv_file, num_question_columns):

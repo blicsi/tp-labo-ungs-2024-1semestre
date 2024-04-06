@@ -5,8 +5,8 @@ import torch
 
 import pandas as pd
 
-from model import NeuralNet
-from nltk_utils import bag_of_words,tokenize
+from better_chatbot.model import NeuralNet
+from better_chatbot.nltk_utils import bag_of_words,tokenize
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -31,13 +31,9 @@ columna_preguntas = intents.iloc[:, 0].tolist()
 columna_respuestas = intents.iloc[:, 1].tolist()
 print("vamos a charlar! tipea 'salir' para salir")
 print("especificar lo mas que se pueda:materia, codigo de materia, dia de cursada y comision")
-while True:
-    
-    sentence = input("you:")
-    if sentence =="salir":
-        break
 
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence,all_words)
     X = X.reshape(1,X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -54,6 +50,7 @@ while True:
             if tag == columna_preguntas.index(intent):
                 #print(f"{bot_name}: {random.choice(intent['responses'])}")
                 respuesta=f"{str(bot_name)}:{str(columna_respuestas[tag])}"
-        print (respuesta)
+        return respuesta
     else:
-        print(f"{bot_name}: por favor especificar mas datos") 
+        return "por favor especificar mas datos"     
+
