@@ -12,34 +12,15 @@ FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
 
 def pantalla_chatbot():
-    #root.geometry("800x800")
-    root.configure(width=800,height=800)
-    btn_login_huella.grid_remove()
-    btn_login_facial.grid_remove()
-    btn_registrar_huella.grid_remove()
-    btn_registrar_rostro.grid_remove()
+    root.withdraw()  # Ocultar la ventana principal
+    ventana_secundaria.deiconify()
+    ventana_secundaria.geometry("800x600")  # Cambiar el tamaño de la ventana secundaria a 400x300
 #--------------------input de texto-----------------------
 
-    # Variable de control para el campo de texto
-    texto_variable = tk.StringVar()
-
-    # Crear el campo de texto y vincularlo a la variable de control
-    entrada_texto = tk.Entry(root, textvariable=texto_variable, width=30)
-    #entrada_texto.grid(row=0, column=0, padx=10, pady=10)
-
-    # Asignar una función que se ejecutará cada vez que el contenido del campo de texto cambie
-    #texto_variable.trace_add("write", actualizar_etiqueta)
-
-    # Etiqueta para mostrar el texto ingresado
-    etiqueta = tk.Label(root, text="")
-    #etiqueta.grid(row=1, column=0, padx=10, pady=10)
     
-    """ entrada_de_texto=tk.Entry(root,width=300)
-    entrada_de_texto.grid(row=3, column=0, padx=5, pady=5, sticky="ew")
-    entrada_de_texto.pack() """
-
-
 #--------------------------------------------    
+
+ventana_previa = None
 
 def login_huella():
     print("Iniciar sesión con huella digital")
@@ -53,35 +34,64 @@ def registrar_huella():
 def registrar_rostro():
     print("Registrar rostro")
 
+def obtener_texto():
+    texto_ingresado = entrada_texto.get()
+    print("Texto ingresado:", texto_ingresado)
 
 def crear_ventana_reconocimiento_facial():
     global logeo_exitoso
     logeo_exitoso=ReconocimientoFacial.ResconocimientoFacial.reconocimiento_facial()
     print(logeo_exitoso)
-    pantalla_chatbot()
+    if logeo_exitoso:
+        print("logeo exitoso")
+        pantalla_chatbot()
+    else:
+        print("logeo fallido")
+    #pantalla_chatbot()
     
+def mostrar_ventana_principal():
+    ventana_secundaria.withdraw()  # Ocultar la ventana secundaria
+    root.deiconify()  # Mostrar la ventana principal
+
 
 # Crear la ventana principal
 root = tk.Tk()
 root.title("UNGS Helper")
 
-if (not logeo_exitoso):
+#if (not logeo_exitoso):
     # Crear un marco para los botones
-    frame = tk.Frame(root, width=200, height=200)
-    frame.pack(padx=200, pady=200)
+frame = tk.Frame(root, width=200, height=200)
+frame.pack(padx=200, pady=200)
 
     # Crear los botones
-    btn_login_huella = tk.Button(frame, text="Login con Huella Digital", command=login_huella)
-    btn_login_huella.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
+btn_login_huella = tk.Button(frame, text="Login con Huella Digital", command=login_huella)
+btn_login_huella.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
 
-    btn_login_facial = tk.Button(frame, text="Login con Reconocimiento Facial", command=crear_ventana_reconocimiento_facial)
-    btn_login_facial.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
+btn_login_facial = tk.Button(frame, text="Login con Reconocimiento Facial", command=crear_ventana_reconocimiento_facial)
+btn_login_facial.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
 
-    btn_registrar_huella = tk.Button(frame, text="Registrar Huella", command=registrar_huella)
-    btn_registrar_huella.grid(row=2, column=0, padx=5, pady=5, sticky="ew")
+btn_registrar_huella = tk.Button(frame, text="Registrar Huella", command=registrar_huella)
+btn_registrar_huella.grid(row=2, column=0, padx=5, pady=5, sticky="ew")
 
-    btn_registrar_rostro = tk.Button(frame, text="Registrar Rostro", command=registrar_rostro)
-    btn_registrar_rostro.grid(row=3, column=0, padx=5, pady=5, sticky="ew")
+btn_registrar_rostro = tk.Button(frame, text="Registrar Rostro", command=registrar_rostro)
+btn_registrar_rostro.grid(row=3, column=0, padx=5, pady=5, sticky="ew")
+
+# Crear la ventana secundaria y ocultarla inicialmente
+ventana_secundaria = tk.Toplevel(root)
+ventana_secundaria.title("Ventana Secundaria")
+ventana_secundaria.withdraw()
+
+# Botón para volver a la ventana principal
+boton_volver = tk.Button(ventana_secundaria, text="cerrar sesion", command=mostrar_ventana_principal)
+boton_volver.pack()
+
+# Crear una entrada de texto
+entrada_texto = tk.Entry(ventana_secundaria,width=90)
+entrada_texto.pack(side="bottom", fill="x", padx=10, pady=10)
+
+# Botón para obtener el texto ingresado
+boton = tk.Button(ventana_secundaria, text="Obtener Texto", command=obtener_texto)
+boton.pack(side="bottom", padx=10, pady=10)
 
 # Iniciar el bucle principal de la aplicación
 root.mainloop()
