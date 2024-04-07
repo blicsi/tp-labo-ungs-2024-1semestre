@@ -74,6 +74,9 @@ btn_registrar_huella.grid(row=2, column=0, padx=5, pady=5, sticky="ew")
 btn_registrar_rostro = tk.Button(frame, text="Registrar Rostro", command=registrar_rostro)
 btn_registrar_rostro.grid(row=3, column=0, padx=5, pady=5, sticky="ew")
 
+btn_admin = tk.Button(frame, text="Saltear login", command=pantalla_chatbot)
+btn_admin.grid(row=4, column=0, padx=5, pady=5, sticky="ew")
+
 # Crear la ventana secundaria y ocultarla inicialmente
 ventana_secundaria = tk.Toplevel(root)
 ventana_secundaria.title("Ventana Secundaria")

@@ -27,7 +27,10 @@ Se requiere de installar las siguientes librerias para poder lebantar el proyect
 Chatbot:
 
   ```bash
-   pip install pytorch nltk pandas openpyxl dataset
+   pip install nltk pandas openpyxl dataset
+   ```
+  ```bash
+   pip3 install torch torchvision torchaudio
    ```
 
 Reconocimiento facial:
