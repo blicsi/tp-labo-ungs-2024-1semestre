@@ -1,26 +1,18 @@
 import tkinter as tk
+import sys
 import ReconocimientoFacial.ResconocimientoFacial
-from better_chatbot.chat import get_response, bot_name  
+from better_chatbot.chat import get_response
 
 logeo_exitoso=False
 
-BG_GRAY = "#ABB2B9"
-BG_COLOR = "#17202A"
-TEXT_COLOR = "#EAECEE"
-
-FONT = "Helvetica 14"
-FONT_BOLD = "Helvetica 13 bold"
+def cerrar_ventana_secundaria():
+    sys.exit()
 
 def pantalla_chatbot():
     root.withdraw()  # Ocultar la ventana principal
     ventana_secundaria.deiconify()
-    ventana_secundaria.geometry("800x600")  # Cambiar el tamaño de la ventana secundaria a 400x300
-#--------------------input de texto-----------------------
-
-    
-#--------------------------------------------    
-
-ventana_previa = None
+    ventana_secundaria.geometry("800x600")  # Cambiar el tamaño de la ventana secundaria a 400x300 
+    ventana_secundaria.protocol("WM_DELETE_WINDOW", cerrar_ventana_secundaria)  
 
 def login_huella():
     print("Iniciar sesión con huella digital")
@@ -35,8 +27,14 @@ def registrar_rostro():
     print("Registrar rostro")
 
 def obtener_texto():
-    texto_ingresado = entrada_texto.get()
-    print("Texto ingresado:", texto_ingresado)
+    texto = entrada_texto.get()
+    respuesta = get_response(texto)
+    area_texto.config(state="normal")  # Habilitar la edición del área de texto
+    area_texto.insert(tk.END,"vos: "+texto + "\n\n")  # Insertar el texto en el área de texto
+    area_texto.insert(tk.END,f"{respuesta}\n\n")  # Insertar el texto en el área de texto
+    area_texto.config(state="disabled")  # Deshabilitar la edición del área de texto}
+    entrada_texto.delete(0, tk.END)  # Vaciar el campo de entrada de texto
+
 
 def crear_ventana_reconocimiento_facial():
     global logeo_exitoso
@@ -90,8 +88,21 @@ entrada_texto = tk.Entry(ventana_secundaria,width=90)
 entrada_texto.pack(side="bottom", fill="x", padx=10, pady=10)
 
 # Botón para obtener el texto ingresado
-boton = tk.Button(ventana_secundaria, text="Obtener Texto", command=obtener_texto)
+boton = tk.Button(ventana_secundaria, text="ingresar codigo de materia, nombre de materia, dia de cursada y comision:", command=obtener_texto)
 boton.pack(side="bottom", padx=10, pady=10)
+
+# Crear un contenedor para el área de texto con un color de fondo
+contenedor_texto = tk.Frame(ventana_secundaria, bg="lightgray")
+contenedor_texto.pack(fill="both", expand=True)
+
+# Crear un área de texto dentro del contenedor
+area_texto = tk.Text(contenedor_texto, bg="white", wrap="word", state="disabled")
+area_texto.pack(side="left", fill="both", expand=True)
+
+# Crear una barra de desplazamiento para el área de texto
+scrollbar = tk.Scrollbar(contenedor_texto, command=area_texto.yview)
+scrollbar.pack(side="right", fill="y")
+area_texto.config(yscrollcommand=scrollbar.set)
 
 # Iniciar el bucle principal de la aplicación
 root.mainloop()

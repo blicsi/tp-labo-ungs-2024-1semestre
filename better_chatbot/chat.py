@@ -8,6 +8,8 @@ import pandas as pd
 from better_chatbot.model import NeuralNet
 from better_chatbot.nltk_utils import bag_of_words,tokenize
 
+
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 intents = pd.read_csv("better_chatbot/preguntas_respuestas.csv",encoding='utf-8',sep=",")
@@ -29,8 +31,6 @@ model.eval()
 bot_name="Sam"
 columna_preguntas = intents.iloc[:, 0].tolist()
 columna_respuestas = intents.iloc[:, 1].tolist()
-print("vamos a charlar! tipea 'salir' para salir")
-print("especificar lo mas que se pueda:materia, codigo de materia, dia de cursada y comision")
 
 def get_response(msg):
     sentence = tokenize(msg)
@@ -48,9 +48,8 @@ def get_response(msg):
     if prob.item()>0.9999:
         for intent in columna_preguntas:
             if tag == columna_preguntas.index(intent):
-                #print(f"{bot_name}: {random.choice(intent['responses'])}")
                 respuesta=f"{str(bot_name)}:{str(columna_respuestas[tag])}"
+                #print(respuesta)
         return respuesta
     else:
         return "por favor especificar mas datos"     
-

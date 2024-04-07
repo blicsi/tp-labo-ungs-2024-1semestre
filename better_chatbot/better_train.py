@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset,DataLoader
 
-from better_chatbot.model import NeuralNet
+from model import NeuralNet
 
 #se guarda en memoria el csv
 data = pd.read_csv("better_chatbot/preguntas_respuestas.csv",encoding='utf-8',sep=",")
@@ -45,8 +45,8 @@ x_train=np.array(x_train)
 y_train=np.array(y_train)
 
 #hyper parameters
-batch_size= 8
-hidden_size=50
+batch_size= 10
+hidden_size=75
 output_size=len(tags)
 input_size= len(x_train[0])
 learning_rate = 0.001
