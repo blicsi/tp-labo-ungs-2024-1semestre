@@ -25,14 +25,14 @@ def pantalla_chatbot():
 
     # Crear el campo de texto y vincularlo a la variable de control
     entrada_texto = tk.Entry(root, textvariable=texto_variable, width=30)
-    entrada_texto.grid(row=0, column=0, padx=10, pady=10)
+    #entrada_texto.grid(row=0, column=0, padx=10, pady=10)
 
     # Asignar una función que se ejecutará cada vez que el contenido del campo de texto cambie
     #texto_variable.trace_add("write", actualizar_etiqueta)
 
     # Etiqueta para mostrar el texto ingresado
     etiqueta = tk.Label(root, text="")
-    etiqueta.grid(row=1, column=0, padx=10, pady=10)
+    #etiqueta.grid(row=1, column=0, padx=10, pady=10)
     
     """ entrada_de_texto=tk.Entry(root,width=300)
     entrada_de_texto.grid(row=3, column=0, padx=5, pady=5, sticky="ew")
