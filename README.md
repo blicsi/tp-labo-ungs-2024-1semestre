@@ -38,6 +38,7 @@ Reconocimiento facial:
   ```bash
    pip install opencv-python opencv-contrib-python imutils
    ```
+   correr EntrenamientoLBPH.py antes de correr el __main__
 
   Además de esto, se deben agregar los archivos de la carpeta [Data](https://drive.google.com/drive/folders/1SIC9dvWZ3jCnUubL4nZVDn60-9IRnJwZ) a Reconocimiento/Facial. Y correr en orden los siguientes arcivos: 
   
