@@ -1,7 +1,9 @@
 import tkinter as tk
 import sys
 import ReconocimientoFacial.ResconocimientoFacial
+import HuellaDactilar.ReconocimientoHuella
 from better_chatbot.chat import get_response
+from tkinter import filedialog
 
 logeo_exitoso=False
 
@@ -13,12 +15,6 @@ def pantalla_chatbot():
     ventana_secundaria.deiconify()
     ventana_secundaria.geometry("800x600")  # Cambiar el tamaño de la ventana secundaria a 400x300 
     ventana_secundaria.protocol("WM_DELETE_WINDOW", cerrar_ventana_secundaria)  
-
-def login_huella():
-    print("Iniciar sesión con huella digital")
-
-def login_facial():
-    print("Iniciar sesión con reconocimiento facial")
 
 def registrar_huella():
     print("Registrar huella digital")
@@ -35,6 +31,19 @@ def obtener_texto():
     area_texto.config(state="disabled")  # Deshabilitar la edición del área de texto}
     entrada_texto.delete(0, tk.END)  # Vaciar el campo de entrada de texto
 
+def crear_ventana_reconocimiento_huella():
+    global logeo_exitoso
+    # Abrir el explorador de archivos y obtener la ruta del archivo seleccionado
+    path = filedialog.askopenfilename(title="Seleccionar imagen de huella", filetypes=[("Archivos de imagen", "*.jpg;*.png")])
+    if path:
+        print("Huella sellecionada: " + path)
+        logeo_exitoso = HuellaDactilar.ReconocimientoHuella.reconocimiento_huella(path)
+        print(logeo_exitoso)
+        if logeo_exitoso:
+            print("logeo exitoso")
+            pantalla_chatbot()
+        else:
+            print("logeo fallido")
 
 def crear_ventana_reconocimiento_facial():
     global logeo_exitoso
@@ -62,7 +71,7 @@ frame = tk.Frame(root, width=200, height=200)
 frame.pack(padx=200, pady=200)
 
     # Crear los botones
-btn_login_huella = tk.Button(frame, text="Login con Huella Digital", command=login_huella)
+btn_login_huella = tk.Button(frame, text="Login con Huella Digital", command=crear_ventana_reconocimiento_huella)
 btn_login_huella.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
 
 btn_login_facial = tk.Button(frame, text="Login con Reconocimiento Facial", command=crear_ventana_reconocimiento_facial)
