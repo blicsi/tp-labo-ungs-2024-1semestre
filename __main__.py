@@ -2,6 +2,7 @@ import tkinter as tk
 import sys
 import ReconocimientoFacial.ResconocimientoFacial
 import HuellaDactilar.ReconocimientoHuella
+import HuellaDactilar.SubirHuella
 from better_chatbot.chat import get_response
 from tkinter import filedialog
 
@@ -16,9 +17,6 @@ def pantalla_chatbot():
     ventana_secundaria.geometry("800x600")  # Cambiar el tamaño de la ventana secundaria a 400x300 
     ventana_secundaria.protocol("WM_DELETE_WINDOW", cerrar_ventana_secundaria)  
 
-def registrar_huella():
-    print("Registrar huella digital")
-
 def registrar_rostro():
     print("Registrar rostro")
 
@@ -30,6 +28,19 @@ def obtener_texto():
     area_texto.insert(tk.END,f"{respuesta}\n\n")  # Insertar el texto en el área de texto
     area_texto.config(state="disabled")  # Deshabilitar la edición del área de texto}
     entrada_texto.delete(0, tk.END)  # Vaciar el campo de entrada de texto
+
+def registrar_huella():
+    global guardado
+    # Abrir el explorador de archivos y obtener la ruta del archivo seleccionado
+    path = filedialog.askopenfilename(title="Seleccionar imagen de huella", filetypes=[("Archivos de imagen", "*.jpg;*.png")])
+    if path:
+        print("Huella guardada de: " + path)
+        guardado = HuellaDactilar.SubirHuella.subir_huella(path)
+        print(guardado)
+        if guardado:
+            print("guardado exitoso")
+        else:
+            print("guardado fallido")
 
 def crear_ventana_reconocimiento_huella():
     global logeo_exitoso
